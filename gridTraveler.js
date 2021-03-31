@@ -1,4 +1,4 @@
-// Time Complexity O(2**n+m)
+// Time Complexity O(m*n)
 const gridTraveler = (m, n, memo = {}) => {
   const key = m + ',' + n;
   if (key in memo) return memo[key];
