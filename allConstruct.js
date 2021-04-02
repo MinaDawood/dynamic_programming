@@ -1,9 +1,9 @@
-//
-// Time Complexity O()
-// Space Complexity O()
+// m = target.length, n = wordBank.length
+// Time Complexity O(n^m)
+// Space Complexity O(m)
 
 const allConstruts = (target, wordBank, memo = {}) => {
-  if (memo[target]) return memo[target];
+  if (target in memo) return memo[target];
   if (target === '') return [[]];
 
   const result = [];
